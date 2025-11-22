@@ -1,0 +1,148 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+/* BACKGROUND GRADIENT EXACT CANVA STYLE */
+body {
+    background: linear-gradient(
+        180deg,
+        #a259ff 0%,
+        #5d5ffe 25%,
+        #2a6ef4 50%,
+        #0aa0c3 75%,
+        #05c3b8 100%
+    );
+    color: white;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    padding: 25px 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: "Pacifico", cursive;
+    font-size: 42px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+    font-size: 17px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-outline {
+    padding: 8px 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.15);
+    color: white;
+    font-weight: 600;
+}
+
+.btn-solid {
+    padding: 8px 20px;
+    border-radius: 12px;
+    background: white;
+    color: #444;
+    font-weight: 600;
+    border: none;
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 120px;
+}
+
+.hero h1 {
+    font-size: 110px;
+    line-height: 0.95;
+    font-weight: 300;
+}
+
+.hero p {
+    margin-top: 24px;
+    font-size: 25px;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 300;
+}
+
+/* BUTTONS */
+.hero-buttons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.btn {
+    padding: 18px 36px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: white;
+    color: #222;
+}
+
+.btn-secondary {
+    background: #1f3d42;
+    color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .navbar {
+        padding: 20px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 58px;
+    }
+
+    .hero p {
+        font-size: 18px;
+        max-width: 90%;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn {
+        width: 90%;
+    }
+}
